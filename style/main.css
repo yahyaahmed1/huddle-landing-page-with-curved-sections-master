@@ -1,0 +1,276 @@
+/* font-family: 'Open Sans', sans-serif; body
+font-family: 'Poppins', sans-serif; headings */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 75px 50px 100px;
+}
+nav > button {
+  padding: 7px 30px;
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 20px;
+  background-color: transparent;
+  color: hsl(322, 100%, 66%);
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px hsl(0, 0%, 87%);
+  font-family: "Open Sans", sans-serif;
+}
+nav > button:hover {
+  border: 1px solid hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px 100px;
+  text-align: center;
+}
+.intro > h1 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+  margin-bottom: 25px;
+}
+.intro > p {
+  width: 750px;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: hsl(192, 100%, 9%);
+  line-height: 1.5;
+}
+.intro > button,
+.question > button {
+  border: none;
+  padding: 20px 100px;
+  border-radius: 75px;
+  margin-bottom: 75px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(322, 100%, 66%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 10px hsl(0deg 0% 80%);
+}
+.intro > button:hover,
+.question > button:hover {
+  background-color: hsl(321, 100%, 78%);
+}
+
+.intro > img {
+  width: 80%;
+}
+
+.data {
+  padding: 0 65px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.data img {
+  width: 35px;
+}
+.data h1 {
+  font-size: 4em;
+  margin: 0;
+  color: hsl(192, 100%, 9%);
+}
+.data p {
+  margin: 5px 0;
+  text-align: center;
+  color: hsl(210, 2%, 59%);
+  font-weight: 600;
+}
+.bg-mob-top,
+.bg-mob-bottom {
+  display: none;
+}
+.grow-together .bg-top,
+.your-users .bg-top {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 10px;
+}
+.grow-together .bg-bottom,
+.your-users .bg-bottom {
+  position: relative;
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+}
+.grow-info,
+.your-info {
+  padding: 0 100px;
+  background-color: hsl(207, 100%, 98%);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.illustration {
+  width: 35%;
+}
+.flowing-text h1,
+.grow-text h1,
+.your-text h1 {
+  font-size: 2em;
+  color: hsl(192, 100%, 9%);
+}
+.flowing-text p,
+.grow-text p,
+.your-text p {
+  font-size: 1.2em;
+  margin: 0;
+  width: 620px;
+  color: hsl(192, 100%, 9%);
+  line-height: 1.5;
+}
+.flowing-conversations {
+  display: flex;
+  margin: 150px 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.question {
+  text-align: center;
+  margin: 75px 0;
+}
+.question > h1 {
+  font-size: 2.3em;
+  color: hsl(192, 100%, 9%);
+}
+
+img.bg-footer-mob {
+  display: none;
+}
+img.bg-footer {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 10px;
+}
+footer {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(210deg 6% 85%);
+}
+.footer-details {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: end;
+}
+.col1 > p,
+.col2 > p {
+  font-size: 13px;
+  line-height: 1.5;
+  width: 305px;
+  margin-bottom: 25px;
+}
+.col2 {
+  padding-left: 20%;
+}
+.phone {
+  width: 215px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.email {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  width: 480px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+input.inp-email {
+  padding: 15px;
+  border-radius: 9px;
+  margin-bottom: 5px;
+  width: 250px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+input.inp-email:invalid {
+  border: 1px solid hsl(0, 100%, 63%);
+}
+label {
+  visibility: hidden;
+  color: hsl(0, 100%, 63%);
+}
+input.inp-email:invalid + label {
+  visibility: visible;
+}
+form > button {
+  padding: 13px 50px;
+  border-radius: 9px;
+  border: none;
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(0, 0%, 87%);
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+form > button:hover {
+  background-color: hsl(321, 100%, 78%);
+}
+
+.social-icons {
+  padding: 0 100px 20px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.facebook:hover,
+.facebook:hover svg path {
+  cursor: pointer;
+  fill: hsl(197deg 100% 64%);
+}
+.instagram:hover,
+.instagram:hover svg path,
+.instagram:hover circle {
+  cursor: pointer;
+  fill: hsl(197deg 100% 64%);
+}
+.twitter:hover,
+.twitter:hover svg g.back-icon {
+  fill: hsl(197deg 100% 64%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.attribution a {
+  color: hsl(197deg 100% 64%);
+}

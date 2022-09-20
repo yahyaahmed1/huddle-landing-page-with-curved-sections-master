@@ -1,0 +1,129 @@
+@media (max-width: 1000px) {
+  nav {
+    padding: 20px;
+  }
+  nav > img {
+    width: 125px;
+  }
+  nav > button {
+    padding: 5px 15px;
+    font-size: 11px;
+  }
+  .intro {
+    padding: 20px 20px 75px;
+  }
+  .intro > h1 {
+    font-size: 1.6em;
+  }
+  .intro > p {
+    width: auto;
+    max-width: 500px;
+    font-size: 14px;
+    padding: 0 5%;
+  }
+  .intro > button,
+  .question > button {
+    padding: 15px 50px;
+    font-size: 14px;
+  }
+  .data {
+    flex-direction: column;
+    height: 425px;
+    justify-content: space-between;
+  }
+  .grow-together .bg-top,
+  .your-users .bg-top {
+    display: none;
+  }
+  .grow-together .bg-bottom,
+  .your-users .bg-bottom {
+    display: none;
+  }
+
+  .bg-mob-top {
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 10px;
+  }
+  .bg-mob-bottom {
+    display: block;
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  .grow-info,
+  .your-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .illustration {
+    width: 300px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+  .flowing-text h1,
+  .grow-text h1,
+  .your-text h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .flowing-text p,
+  .grow-text p,
+  .your-text p {
+    width: 330px;
+    max-width: 450px;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 50px;
+    margin: auto;
+  }
+  .flowing-conversations {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0;
+    padding: 0 50px;
+  }
+  .question > h1 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+  img.bg-footer {
+    display: none;
+  }
+  img.bg-footer-mob {
+    display: block;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .footer-details {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .col2 {
+    padding: 0 0 100px 0;
+  }
+  form {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  input.inp-email {
+    width: -webkit-fill-available;
+  }
+  .social-icons {
+    padding: 0 20px 50px;
+    width: 110px;
+  }
+  .social-icons div svg {
+    width: 25px;
+    height: 30px;
+  }
+}
